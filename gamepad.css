@@ -1,0 +1,154 @@
+
+* {
+	outline: none;
+	box-sizing:border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+/* overrides to jsapi css */
+
+.esriSimpleSlider {
+	display: none !important;
+}
+
+table {
+	color: #fff !important;
+}
+
+.esriLegendLayerLabel, .esriLegendLayer {
+	color: #fff !important;
+}
+
+.esriLegendServiceLabel {
+	display: none !important;
+}
+
+/* overrides to jsapi css */
+
+#mapdiv {
+    width:100%;
+    height:100%;
+	display:block;
+}
+
+#header {
+	height: 64px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 100;
+	color: #fff;
+	background: rgba(0,0,0,0.7);
+}
+
+#title {
+	position: absolute;
+	top: 15px;
+	left: 90px;
+	font-size: 26px;
+	z-index: 100;
+}
+
+#title h3 {
+	margin: 0px;
+}
+
+#connect-status {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 0px 23px;
+	z-index: 100;
+}
+
+#microphone {
+	height: 64px;
+}
+
+#help-text {
+	display: inline-block;
+	height: 100%;
+	min-width: 200px;
+	padding: 0px 20px;
+	position: absolute;
+	right: 82px;
+	font-size: 20px;
+}
+
+#help-text-text {
+	margin-top: 18px;
+	text-align: center;
+	font-size: 28px;
+}
+
+#legend-div {
+	background: rgba(0,0,0,0.7);
+	display: none;
+	font-size: 28px;
+	min-height: 200px;
+	max-height: 500px;	
+	min-width: 250px;
+	max-width: 400px;
+	overflow-y: auto;
+	position: absolute !important;
+	right: 0px;
+	bottom: 27%;
+	padding: 20px;
+	border-radius: 5px;
+	color: #fff !important;
+	z-index: 200;
+}
+
+#help-prompts {
+	background: rgba(0,0,0,0.8);
+	bottom: 0px;
+	color: white;
+	display: none;
+	font-size: 20px;
+	padding-right: 20px;
+	position: absolute;
+	right: 0px;	
+	width: 100%;
+	z-index: 100;
+}
+
+#help-prompts div {
+	display: inline-block;
+	width: 32%;
+}
+
+#help-prompts ul {
+	display: inline-block;
+	list-style-type: none;
+}
+
+#help-prompts ul.description {
+	color: #CCC;
+}
+
+/*#help-prompts ul li:first-child {
+	font-size: 24px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}*/
+
+.connected, .valid-command {
+	background-color: rgb(43, 187, 89);
+}
+
+.disconnected, .invalid-command {
+	background-color: rgb(230, 100, 100);
+}
+
+#no-microphone {
+	display:none;
+}
+
+

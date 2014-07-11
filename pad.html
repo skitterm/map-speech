@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web Speech</title>
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="gamepad.css">
+    <script src="http://js.arcgis.com/3.9/"></script>
+    <script type="text/javascript" src="pad.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="esri-logo.png" style="margin:0 10px;width:64px;height:64px;"/>
+        <div id="title">Loading ...</div>
+        <div class="valid-command" id="help-text">
+            <h4 id="help-text-text">Touch mic to begin</h4>
+        </div>
+        <div id="connect-status">
+            <img id="microphone" src="microphoneInactive.png">
+            <img id="no-microphone" src="no.png">
+        </div>
+    </div>
+    <div id="mapdiv"></div>
+    <div id="legend-div"></div>
+    <div id="help-prompts">
+        <div>
+            <ul>
+                <li>Help</li>
+                <li>Ok</li>
+                <li>Next</li>
+                <li>Switch</li> 
+                <li>Legend</li>           
+            </ul>
+            <ul class="description">
+                <li>Open this dialog</li>
+                <li>Close this dialog</li>
+                <li>Move to next map</li>            
+                <li>Switch basemap</li>
+                <li>Show/hide legend</li>
+            </ul>
+        </div>
+        <div>        
+            <ul>
+                <li>In</li>
+                <li>Out</li>
+                <li>Up</li>
+                <li>Down</li>            
+                <li>Right</li>
+            </ul>
+            <ul class="description">
+                <li>Zoom in</li>
+                <li>Zoom out</li>
+                <li>Pan up</li>
+                <li>Pan down</li>
+                <li>Pan right</li>            
+            </ul>
+        </div>
+        <div>        
+            <ul>                            
+                <li>Left</li>                
+                <li>Reset</li>
+                <li>Reload</li>
+            </ul>
+            <ul class="description">                
+                <li>Pan left</li>                        
+                <li>Reset to original extent</li>
+                <li>Reload the map</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
